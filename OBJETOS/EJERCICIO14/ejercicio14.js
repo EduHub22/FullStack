@@ -1,7 +1,7 @@
 var nombre = document.getElementById('nombre')
 var apellido = document.getElementById('apellido')
 var edad = document.getElementById('edad')
-var btn = document.getElementById('btn')
+var boton = document.getElementById('btn')
 var miObjeto = new Object()
 
 btn.addEventListener('click', function(){
@@ -18,7 +18,7 @@ btn.addEventListener('click', function(){
         miObjeto.apellido = 'Vacío'
     }else{
 
-        miObjeto.nombre = nombre.value
+        miObjeto.apellido = apellido.value
     }
 
     if(edad.value == ''){
@@ -26,9 +26,9 @@ btn.addEventListener('click', function(){
         miObjeto.edad = 'Vacío'
     }else{
 
-        miObjeto.nombre = nombre.value
+        miObjeto.edad = edad.value
     }
 
-    alert('nombre: ' + miObjeto)
+    alert('nombre: ' + miObjeto.nombre + ', apellido: ' + miObjeto.apellido + ', edad: ' + miObjeto.edad)
 
 })
